@@ -1,0 +1,26 @@
+<div class="container">
+<h2 class="text-center">Update Medicine</h2>
+<form (ngSubmit)="onSubmit()">
+
+<div class="form-group">
+    <label>Medication_Name</label>
+    <input type="text" id="medicationName" name="medicationName" placeholder="Enter Medicine name" class="form-control" [(ngModel)]="medication.medicationName"/>
+</div>
+
+<div class="form-group">
+    <label>Medication_Category</label>
+    <input type="text" id="medicationCategory" name="medicationCategory" placeholder="Enter Medicine Category" class="form-control" [(ngModel)]="medication.medicationCategory"/>
+</div>
+
+<div class="form-group">
+    <label>Medication_Price</label>
+    <input type="number" id="medicationPrice" name="medicationPrice" placeholder="Enter Medicine Price" class="form-control" [(ngModel)]="medication.medicationPrice"/>
+</div>
+
+<div class="form-group">
+    <label>Stock_Quantity</label>
+    <input type="number" id="stockQuantity" name="stockQuantity" placeholder="Enter Medicine Quantity" class="form-control" [(ngModel)]="medication.stockQuantity"/>
+</div>
+<button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>

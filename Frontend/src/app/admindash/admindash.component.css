@@ -1,0 +1,42 @@
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Apply styles to the table */
+  table {
+    font-size: 14px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff; /* Clean white background */
+    border-collapse: collapse; /* Remove double borders */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  table th {
+    background-color: #4caf50; /* Light green for headers */
+    color: white; /* White text for contrast */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Light border for rows */
+    color: #333; /* Dark gray for text */
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1; /* Light gray hover effect */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Page container styling */
+  .container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,50 @@
+/* Navbar Styling */
+.navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff5722; /* Highlight color on hover */
+  }
+  
+  /* Container Styling */
+  .container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  /* Labels Styling */
+  label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333; /* Dark text color */
+  }
+  
+  label b {
+    color: #007bff; /* Blue color for dynamic values */
+  }
+  
+  /* Breakpoints for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    label {
+      font-size: 0.9rem;
+    }
+  }
+  

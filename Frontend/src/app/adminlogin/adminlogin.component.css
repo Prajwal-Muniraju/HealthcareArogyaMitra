@@ -1,0 +1,99 @@
+/* Navbar styles */
+.navbar {
+    margin: auto;
+    background-color: #343a40; /* Dark background */
+
+  }
+  
+  
+  .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-brand:hover {
+    color: #d4d4d4;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  .nav-link:hover {
+    color: #ffcc00; /* Highlight color */
+  }
+  
+  /* Card styles */
+  .card {
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .text-center h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .text-center h6 {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Input fields */
+  .form-control {
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .mb-3 h4 {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  /* Buttons */
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .text-center h1 {
+      font-size: 1.5rem;
+    }
+  
+    .text-center h6 {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+  

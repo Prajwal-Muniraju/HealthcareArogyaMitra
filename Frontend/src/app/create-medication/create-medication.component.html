@@ -1,0 +1,42 @@
+<nav style="margin:auto;" class="navbar navbar-expand-lg bg-dark">
+    <a style="color: #FFD700;" class="navbar-brand" href="#">ArogyaMithra</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color: #00CED1;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/view-medication">Back</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+<div class="container">
+<h2 class="text-center">Add new Medicin</h2>
+
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>medicationName</label>
+        <input type="text" id="medicationId" name="medicationId" class="form-control" placeholder="Enter Medication Name" [(ngModel)]="medication.medicationName">
+    </div>
+        
+    <div class="form-group">
+        <label>medicationCategory</label>
+        <input type="text" id="medicationCategory" name="medicationCategory" class="form-control" placeholder="Enter Medication Category" [(ngModel)]="medication.medicationCategory">
+    </div>
+       
+    <div class="form-group"> 
+        <label>medicationPrice</label>
+        <input type="number" id="medicationPrice" name="medicationPrice" class="form-control" placeholder="Enter Medication Price" [(ngModel)]="medication.medicationPrice">
+    </div>
+
+    <div class="form-group"> 
+        <label>stockQuantity</label>
+        <input type="number" id="stockQuantity" name="stockQuantity" class="form-control" placeholder="Enter stock Quantity" [(ngModel)]="medication.stockQuantity">
+    </div>
+    <button type="submit" class="btn btn-success">submit</button>
+
+</form>
+</div>

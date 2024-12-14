@@ -1,0 +1,47 @@
+<nav style="margin:auto;" class="navbar navbar-expand-lg bg-dark">
+    <a style="color: #FFD700;" class="navbar-brand" href="#">ArogyaMithra</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color: #00CED1;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/appointmentlist">Back</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <hr>
+
+    <div class="container">
+
+        <h2 class="text-center">Add new Appointment</h2>
+    
+        <form (ngSubmit)="onSubmit()">
+    
+            <div class="form-group">
+                <label for="apppDate">Appointment_Date</label>  
+                <input type="text" id="apppDate" class="form-control" placeholder="Enter Appointment Date" [(ngModel)]="appointment.appDate" name="appDate">
+            </div>
+    
+            <div class="form-group">
+                <label for="appStatus">Appointment_Status</label>  
+                <input type="text" id="appStatus" class="form-control" placeholder="Enter Appointment Status" [(ngModel)]="appointment.appStatus" name="appStatus">
+            </div>
+    
+            <div class="form-group">
+                <label for="appDiagnosis">Appointment_Diagnosis</label>  
+                <input type="text" id="appDiagnosis" class="form-control" placeholder="Enter Diagnosis" [(ngModel)]="appointment.appDiagnosis" name="appDiagnosis">
+            </div>
+    
+            <div class="form-group">
+                <label for="appPrescription">Appointment_Prescription</label>  
+                <input type="text" id="appPrescription" class="form-control" placeholder="Enter Appointment Prescription" [(ngModel)]="appointment.appPrescription" name="appPrescription">
+            </div> 
+    
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+        </form>
+    
+    </div>
+    

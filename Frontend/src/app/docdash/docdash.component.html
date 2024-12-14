@@ -1,0 +1,73 @@
+<nav style="margin:auto;" class="navbar navbar-expand-lg bg-dark">
+    <a style="color: #FFD700;" class="navbar-brand" href="#">ArogyaMithra</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color: #00CED1;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/create-patient">Add patients</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: #00CED1;" class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/view-medication">View Medicin</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="btn btn-danger" style="color: white;" href="javascript:void(0);" routerLink="/home">LogOut</a>
+          </li>
+          
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <hr>
+    <h2 style="text-align: center; margin-top: 20px; color: #1E90FF;">Dashboard</h2>
+    <a style="color: #4B0082; font-size: x-large;">
+      <marquee behavior="scroll" direction="left" style="color: #32CD32;">
+        Welcome to Doctor Dashboard. Please find the patient list below!!
+      </marquee>
+      <br>
+       Click Appointments to view and update Appointments, Click Add Appointment to add new Appointment.
+    </a>
+    <hr>
+    <a style="color: #8B0000; font-size: xx-large;">Current patients List in the Queue</a>
+    <div class="tableFixHead">
+      <!-- Your table content -->
+    </div>
+  </div>
+<div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th>Patient_Id</th>
+            <th>Patient_Name</th>
+            <th>Gender</th>
+            <th>DateOfBirth</th>
+            <th>Patient_Address</th>
+            <th>Contact_Number</th>
+            <th>Insurance_Details</th>
+            <!-- <th>Patient_UserName</th>
+            <th>Patient_Password</th> -->
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let patient of patients">
+            <td>{{patient.pid}}</td>
+            <td>{{patient.pname}}</td>
+            <td>{{patient.gender}}</td>
+            <td>{{patient.dob}}</td>
+            <td>{{patient.patientAddress}}</td>
+            <td>{{patient.contInfo}}</td>
+            <td>{{patient.insurance_Info}}</td>
+            <!-- <td>{{patient.patientUsername}}</td>
+            <td>{{patient.patientPassword}}</td> -->
+            <td>
+              <button (click)="update(patient.pid)" class="btn btn-info">update</button>
+              <button (click)="delete(patient.pid)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+              <button (click)="view(patient.pid)" class="btn btn-success" style="margin-left: 10px;">view</button>
+
+            </td>
+        </tbody>
+      </table>
+      </div>

@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+    <a class="navbar-brand text-danger" href="#">ArogyaMithra</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-primary" aria-current="page" routerLink="/docdash">Back</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container">
+    <h2 class="text-center">Update Patient</h2>
+
+    <form (ngSubmit)="onSubmit()">
+
+        
+        <div class="form-group">
+            <label>Patient_Name</label>
+            <input type="text" id="pname" name="pname" placeholder="Enter your Name" class="form-control" [(ngModel)]="patient.pname"/>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="text" id="gender" name="gender" placeholder="Enter your Gender" class="form-control"[(ngModel)]="patient.gender"/>
+        </div>
+
+        <div class="form-group">
+            <label>DateOfBirth</label>
+            <input type="text" id="dob" name="dob" placeholder="Enter your DateOfBirth" class="form-control"[(ngModel)]="patient.dob"/>
+        </div>
+
+        <div class="form-group">
+            <label>Patient_Address</label>
+            <input type="text" id="patientAddress" name="patientAddress" placeholder="Enter your Address" class="form-control"[(ngModel)]="patient.patientAddress"/>
+        </div>
+
+        <div class="form-group">
+            <label>Contact_Number</label>
+            <input type="number" id="contInfo" name="contInfo" placeholder="Enter your Contact Number" class="form-control"[(ngModel)]="patient.contInfo"/>
+        </div>
+
+        <div class="form-group">
+            <label>Insurance_Details</label>
+            <input type="text" id="insurance_Info" name="insurance_Info" placeholder="Enter your Insurance Details" class="form-control"[(ngModel)]="patient.insurance_Info"/>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    
+</div>

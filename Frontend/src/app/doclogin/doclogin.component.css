@@ -1,0 +1,109 @@
+/* Navbar styles */
+.navbar {
+    margin: auto;
+    background-color: #343a40; /* Dark background */
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Highlight color */
+}
+
+/* Card styles */
+.card {
+    margin: 50px auto;
+    padding: 40px; /* Increased padding for a spacious look */
+    max-width: 500px; /* Increased width */
+    min-height: 450px; /* Increased height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white for a modern look */
+    backdrop-filter: blur(5px); /* Subtle blur effect */
+    background-image: url('/assets/docdeshi.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire card */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.text-center h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-center h6 {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Input fields */
+.form-control {
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+.mb-3 h4 {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 1rem;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+    font-size: 1rem;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin: 20px auto;
+        padding: 20px; /* Slightly increased padding for smaller screens */
+        max-width: 90%; /* Adjust to fit smaller screens */
+        min-height: 400px; /* Maintain proportional height */
+    }
+
+    .text-center h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-center h6 {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}

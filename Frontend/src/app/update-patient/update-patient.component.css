@@ -1,0 +1,100 @@
+/* Navbar Styling */
+.navbar {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e51c23 !important; /* Custom red color */
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff !important; /* Primary blue */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff5722 !important; /* Highlighted orange on hover */
+  }
+  
+  /* Container Styling */
+  .container {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #f8f9fa; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2.text-center {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #343a40; /* Dark grey heading */
+  }
+  
+  /* Form Styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #495057; /* Muted dark color for labels */
+  }
+  
+  .form-control {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .btn-success {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h2.text-center {
+      font-size: 1.5rem;
+    }
+  
+    .form-group label {
+      font-size: 0.9rem;
+    }
+  
+    .form-control {
+      font-size: 0.9rem;
+    }
+  
+    .btn-success {
+      font-size: 0.9rem;
+    }
+  }
+  
